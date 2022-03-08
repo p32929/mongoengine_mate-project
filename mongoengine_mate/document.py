@@ -203,7 +203,7 @@ class ExtendedDocument(mongoengine.Document):
         return cls._get_collection()
 
     @classmethod
-    def col(cls):
+    def col(cls) -> Collection:
         """
         Alias of :meth:`~ExtendedDocument.collection()`
 
